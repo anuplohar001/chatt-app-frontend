@@ -127,7 +127,7 @@ const Users = () => {
             <div className='allusers selecthead'>
               All Chats (users)
             </div>
-            <div>
+            <div className='mapedusers'>
               {
                 users.map((user, index) => (
                   <div onClick={() => handleUser(user)} key={index} >

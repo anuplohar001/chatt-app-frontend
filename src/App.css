@@ -311,3 +311,13 @@
 .typing {
   font-weight: bold;
 }
+
+.grlist {
+  height: 30vh;
+  overflow-y: scroll;
+}
+
+.mapedusers {
+  height: 50vh;
+  overflow-y: scroll;
+}

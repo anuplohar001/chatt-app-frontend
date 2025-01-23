@@ -63,7 +63,7 @@ const Groups = ({ handleUser }) => {
                 </div>
                 <div>
                     List of Chatt Rooms
-                    <div>
+                    <div className='grlist'>
                         {
                             groups && groups.map((group, index) => (
                                 <div onClick={()=>handleUser(group)} key={index} className='user'>{group.groupName}</div>
