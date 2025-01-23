@@ -99,7 +99,7 @@ const Users = () => {
     const user = JSON.parse(data)
     if(user.username === 'nitin') {
       setselectedUser({ _id: "6790920185222e4c879172a4", username: "pratik", password: "pratik", liveUser: [] })
-      setonlineUsers([{ _id: "6790920185222e4c879172a4", username: "pratik", password: "pratik", liveUser: [{ username: fromUser.username }] }])
+      setonlineUsers([{ _id: "6790920185222e4c879172a4", username: "pratik", password: "pratik", liveUser: [{ username: (fromUser.username ? fromUser.username : undefined) }] }])
     }
     socket.on('updated-users', (data) => {
       setonlineUsers(data.users)
