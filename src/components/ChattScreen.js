@@ -5,7 +5,6 @@ const ChattScreen = ({ selectedUser, fromUser, onlineUsers, onlineMembers }) => 
 
     const [messages, setMessages] = useState([])
     const [message, setMessage] = useState([])
-    const [user, setUser] = useState('anuph')
     const [typing, settyping] = useState()
     const getMessages = async () => {
         const response = await fetch(serverUrl().concat('/messages'), {
@@ -49,19 +48,6 @@ const ChattScreen = ({ selectedUser, fromUser, onlineUsers, onlineMembers }) => 
         socket.emit("sendMessage", msg)
         setMessage('')
         // handleStopTyping();
-    }
-
-    const processDate = (olddate) => {
-
-        let dateTime = olddate.substring(0, olddate.length - 3);
-        const [date, time] = dateTime.split(" ");
-        const [year, month, day] = date.split("-");
-        const monthNames = [
-            "Jan", "Feb", "Mar", "Apr", "May", "Jun",
-            "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
-        ];
-        const formattedDateTime = `${time} ${day} ${monthNames[parseInt(month) - 1]}`;
-        return formattedDateTime
     }
 
     const handleClass = (msg) => {

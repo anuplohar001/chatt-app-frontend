@@ -1,11 +1,9 @@
 import { serverUrl } from '../lib/actions'
 import React, { useState, useEffect } from 'react'
 
-const Groups = ({ users, fromUser, handleUser }) => {
+const Groups = ({ handleUser }) => {
 
     const [groupName, setGroupName] = useState("")
-    const [groupmembers, setGroupMembers] = useState([])
-    const [checkStates, setCheckStates] = useState({})
     const [groups, setgroups] = useState()
 
     const getGroups = async () => {
@@ -24,22 +22,6 @@ const Groups = ({ users, fromUser, handleUser }) => {
         }
     }
 
-    const handleCheckboxes = async (e) => {
-        const {value, checked} = e.target
-        console.log(value, checked)
-        if(checked)
-        {
-            setGroupMembers((prev) => ([...prev, value]))
-        }
-        else{
-            setGroupMembers((prev)=>(prev.filter ((label) => label !== value)))
-        }
-        setCheckStates((prev) => ({
-            ...prev,
-            [value]:checked
-        }))
-    }
-
     const handleSubmit = async () => {
         try {
             const response = await fetch(serverUrl().concat('/creategroup'), {
@@ -53,8 +35,6 @@ const Groups = ({ users, fromUser, handleUser }) => {
             })
             if(response.ok){
                 alert("Group Created")
-                setCheckStates({})
-                setGroupMembers([])
             }
         } catch (error) {
             console.log(error)
