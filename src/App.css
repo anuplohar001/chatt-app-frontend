@@ -1,0 +1,313 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.home {
+  color: white;
+  font-size: 30px;
+}
+
+.home :hover {
+  color: rgb(24, 26, 25);
+}
+
+.container {
+  margin-top: 1.5rem;
+  font-weight: bold;
+  font-size: 1.875rem;
+
+  text-align: center;
+}
+
+.subtext {
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem;
+
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  border-radius: 0.5rem;
+  border-width: 2px;
+  height: 2rem;
+  width: 24rem;
+  padding: 0.5rem;
+
+}
+
+.button {
+  border-width: 2px;
+
+  padding: 0.5rem;
+
+  width: 15rem;
+
+  border-radius: 0.5rem;
+
+  background-color: #5b21b6;
+
+  color: white;
+  transition: background-color 0.5s;
+
+}
+
+.button:hover {
+  background-color: #7c3aed;
+
+}
+
+.usercontainer {
+  margin: 10px;
+  display: flex;
+}
+
+.users {
+  display: flex;
+  background-color: white;
+  height: 90vh;
+  width: 90vw;
+  border: solid 2px black;
+  color: black;
+  border-radius: 20px;
+  margin: 10px;
+  margin-left: 30px;
+}
+
+.createuser {
+  display: flex;
+  flex-direction:column ;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.createuser>input {
+  margin-left: 10px;
+  padding: 10px;
+  width: 20vw;
+  margin: 10px;
+}
+
+.createuser>button {
+  margin: 5px;
+  padding: 10px;
+  margin-left: 5px;
+  width: 15vw;
+}
+
+.creategroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.screenuser {
+  background-color: rgb(95, 0, 248);
+  color: white;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.user {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 10vw;
+  background-color: rgb(95, 0, 248);
+  color: white;
+}
+
+.messages {
+  display: flex;
+  height: 70vh;
+  overflow-y: scroll;
+  padding: 3px;
+  margin: 3px;
+  border: solid 2px #282c34;
+}
+
+.flex {
+  display: flex;
+}
+
+.screen {
+  margin: 20px;
+  height: 85vh;
+  width: 50vw;
+  border-radius: 10px;
+  border: solid 2px black;
+}
+
+.message {
+  margin: 5px;
+  padding: 10px;
+  width: 20rem;
+  font-size: large;
+  border: solid 2px black;
+  border-radius: 5px;
+}
+
+.send {
+  margin: 5px;
+  padding: 10px;
+  width: 5rem;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+}
+
+.msg {
+  font-size: 16px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  width: max-content;
+}
+
+.msggrsend {
+
+}
+
+.msgsend {
+  background-color: green;
+}
+
+.msgrecieve {
+  background-color: grey;
+}
+
+.msgcontainerreceive {
+  justify-content: start;
+}
+
+.msgcontainersend {
+  justify-content: end;
+
+}
+
+.allusers {}
+
+.selecthead {
+  border: solid 2px black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin: 15px;
+  padding: 5px;
+}
+
+.from {
+  border-radius: 5px;
+  font-size: large;
+  background-color: green;
+  color: white;
+  line-height: 30px;
+  padding: 5px;
+  margin: 5px;
+  margin-top: 45px;
+}
+
+.grcontainer {
+  width: 50vw;
+  overflow-x: scroll;
+  border: solid 2px black;
+}
+
+.groupmembers {
+  margin: 10px;
+  width: max-content;
+}
+
+.createuser>input {
+  margin-top: 5px;
+}
+
+.onlineusers {
+  border: solid 2px black;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 8px;
+  height: 65vh;
+  width: 20vw;
+}
+
+.msgcontainer {
+  display: flex;
+  flex-direction: column;
+  border: solid 2px black;
+  border-radius: 10px;
+  height: 60vh;
+  width: 30vw;
+  margin-left: 20px;
+  overflow-y: scroll;
+}
+
+.fromuser {
+  font-size: 13px;
+  text-align: left;
+}
+
+.loginuser {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.logout {
+  padding: 5px;
+  margin: 10px;
+}
+
+.userlist {
+  margin-right: 40px;
+}
+
+.creategroup > input {
+  padding: 10px;
+  margin: 10px;
+}
+
+.creategroup > button {
+  padding: 10px;
+  width: max-content;
+}
+
+.typing {
+  font-weight: bold;
+}
