@@ -35,6 +35,7 @@ const Groups = ({ handleUser }) => {
             })
             if(response.ok){
                 alert("Group Created")
+                getGroups()
             }
         } catch (error) {
             console.log(error)
